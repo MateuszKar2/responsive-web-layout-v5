@@ -66,13 +66,15 @@ body {
 .blue-text {
   color: var(--blue);
 }
-  .active-link::after {
+.item {
+  position: relative;
+}
+.active-link::after {
   content: "";
   position: absolute;
+  transform: translateY(29px);
   display: block;
-  transform: translateY(9px);
-  width: 100%;
-  top: 28px;
+  width: 53px;
   height: 4px;
   left: 0px;
   background: #2196f3;
@@ -87,7 +89,6 @@ body {
   list-style: none;
   gap: 46px;
   margin-left: 93px; 
-  position: relative;
  }
  .link-style {
   font-weight: 500;
@@ -355,6 +356,29 @@ img {
   padding-left: 0px;
   padding-top: 50px;
   padding-bottom: 94px;
+}
+.service-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.service-contents {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 27px;
+  width: 370px;
+  height: 70px;
+  bottom: 0px;
+  background: rgba(47, 48, 58, 0.8);
 }
 .container {
   display: flex;
