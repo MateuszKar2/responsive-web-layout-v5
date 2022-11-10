@@ -119,13 +119,11 @@ body {
 .icon-space {
   margin-right: 10px;
 }
-
-.icon-space:hover,
-.icon-space:focus {
+.contact-link-style:hover,
+.contact-link-style:focus {
   --color1: var(--blue);
   fill: #2196f3;
 }
-
 .contact-link-style {
   color: var(--grey);
   font-weight: 500;
@@ -331,6 +329,7 @@ img {
   left: 0px;
   bottom: 0px;
   right: 0px;
+  display: inline-block;
   background-color: var(--blue);
   color: var(--white);
   text-align: left;
@@ -340,14 +339,10 @@ img {
   opacity: 90%;
 }
 
-.overlay:hover {
-  transform: translateY(-294px)
+.overflow:hover .overlay {
+  transform: translateY(0);
 }
 
-.photo-portfolio .photo-describe-portfolio:hover .overlay {
-  transform: translatex(0);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .cards-items:hover,
 .cards-items:focus {
@@ -590,13 +585,13 @@ img {
   fill: var(--iconcolor);
 }
 
-.icon-ourclient:hover {
+/*.icon-ourclient:hover {
   cursor: pointer;
   fill: var(--blue);
   border: 1px solid var(--blue);
-}
+}*/
 
-/* /* Our clients section */
+ /* Our clients section */
 .section-ourclients {
   padding-top: 94px;
   margin: 0;
