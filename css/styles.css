@@ -36,6 +36,7 @@ body {
 .blue-text:hover,
 .blue-text:focus {
   color: var(--blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section {
@@ -123,6 +124,7 @@ body {
 .contact-link-style:focus {
   --color1: var(--blue);
   fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link-style {
   color: var(--grey);
@@ -169,6 +171,7 @@ body {
 .top-section-text:hover,
 .top-section-text:focus {
   color: var(--blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-section-button {
@@ -236,11 +239,10 @@ body {
 .blue-background:hover {
   background-color: var(--blue);
   color: var(--white);
-
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* portfolio project */
@@ -272,6 +274,7 @@ img {
   color: var(--white-item);
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .caption-border {
@@ -349,6 +352,7 @@ img {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   color: var(--white);
   cursor: pointer;
+ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /*background-color: var(--blue);*/
 }
 
@@ -537,10 +541,12 @@ img {
 }
 
 .icon-team-link:hover {
-  fill: var(--white);
-  background-color: var(--blue);
   cursor: pointer;
+  background-color: var(--blue);
+  --color2: var(--white);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 /* /* Our clients section */
 .section-ourclients {
@@ -635,9 +641,13 @@ img {
 }
 
 .icon-ourclient:hover {
-  cursor: pointer;
-  fill: var(--blue);
+  /*cursor: pointer;
+  fill: var(--blue);*/
   border: 1px solid var(--blue);
+  cursor: pointer;
+  background-color: var(--white);
+  --color2: var(--blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
@@ -734,8 +744,9 @@ img {
 
 .footer-icon:hover {
   cursor: pointer;
-  background-color: var(--active-color);
-  --color1: var(--bcg2-color)
+  background-color: var(--blue);
+  --color2: var(--white);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* 
